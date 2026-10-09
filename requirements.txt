@@ -38,3 +38,4 @@ websockets==17.1
 pytest
 openpyxl
 xlrd
+plotly
