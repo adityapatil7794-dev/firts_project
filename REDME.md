@@ -135,3 +135,28 @@ The source provides sample product data for development and demonstration; it is
 - Add data-quality and transformation unit tests
 - Introduce CI with GitHub Actions
 - Deploy the dashboard to a hosted environment
+
+
+
+## Luxury Company Data Pipeline
+
+This module collects luxury company information from the Wikidata public API and stores it in PostgreSQL.
+
+**Technologies used**
+- Python
+- Requests
+- Wikidata API
+- PostgreSQL
+- psycopg2
+
+**Pipeline steps**
+1. Extract company information from Wikidata.
+2. Validate company records.
+3. Handle API rate limits with retry logic.
+4. Load records into the `luxury_companies` table.
+5. Use SQL to verify and inspect the stored data.
+
+**Current dataset:** 9 records.
+
+**Database:** `learning_db`  
+**Table:** `luxury_companies`
